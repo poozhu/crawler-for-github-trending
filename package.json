@@ -1,0 +1,16 @@
+{
+  "name": "githubapi",
+  "version": "1.0.0",
+  "description": "API for Github Trending",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zy_2071",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.16.4"
+  }
+}
