@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 function getData(time, language) {
-    let url = 'https://github.com/trending' + (language ? '/' + language : '') + '?since=' + time;  // 拼接请求的页面链接
+    let url = 'https://github.com/trending' + (!!language ? '/' + language : '') + '?since=' + time;  // 拼接请求的页面链接
     return axios.get(url)
         .then(function (response) {
             let html_string = response.data.toString(); // 获取网页内容
@@ -22,12 +22,7 @@ function getData(time, language) {
                 list_array.push(obj);
 
                 // 检测各项数据是否正确
-                // console.log(title);
-                // console.log(description);
-                // console.log(language);
-                // console.log(starts);
-                // console.log(forks);
-                // console.log(today);
+                // console.log(obj);
             });
             return Promise.resolve(list_array);
 
@@ -37,6 +32,21 @@ function getData(time, language) {
         })
 }
 
+app.get('/', (req, res) => {
+    let promise = getData('daily'); // 发起抓取
+    promise.then(response => {
+        res.json(response); // 数据返回
+    });
+})
+app.get('/:time', (req, res) => {
+    const {
+        time, // 获取排序时间
+    } = req.params;
+    let promise = getData(time); // 发起抓取
+    promise.then(response => {
+        res.json(response); // 数据返回
+    });
+})
 app.get('/:time-:language', (req, res) => {
     const {
         time, // 获取排序时间
@@ -46,7 +56,6 @@ app.get('/:time-:language', (req, res) => {
     promise.then(response => {
         res.json(response); // 数据返回
     });
-
 })
 
 app.listen(3000, () => console.log('Listening on port 3000!'))  // 监听3000端口
