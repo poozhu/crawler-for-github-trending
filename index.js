@@ -47,7 +47,7 @@ app.get('/:time', (req, res) => {
         res.json(response); // 数据返回
     });
 })
-app.get('/:time-:language', (req, res) => {
+app.get('/:time/:language', (req, res) => {
     const {
         time, // 获取排序时间
         language // 获取对应语言
