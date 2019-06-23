@@ -3,6 +3,7 @@
 一个50行的node爬虫，一个简单的 [axios](https://github.com/axios/axios), [express](https://github.com/expressjs/express), [cheerio](https://github.com/cheeriojs/cheerio) 体验项目。  
 
 # Usage  
+一篇简单的介绍 https://juejin.im/post/5cbab247e51d45789024d7cb   
 首先保证电脑已存在node环境，然后  
 
 1.拉取本项目  
