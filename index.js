@@ -10,11 +10,11 @@ function getData(time, language) {
             let html_string = response.data.toString(); // 获取网页内容
             const $ = cheerio.load(html_string);  // 传入页面内容
             let list_array = [];
-            $('.repo-list li').each(function () { // 像jQuery一样获取对应节点值
+            $('.Box .Box-row').each(function () { // 像jQuery一样获取对应节点值
                 let obj = {};
-                obj.title = $(this).find('>.col-9 a').text().trimStart().trimEnd(); // 获取标题
+                obj.title = $(this).find('h1').text().trimStart().trimEnd(); // 获取标题
                 obj.links = 'https://github.com/' + obj.title.replace(/\s/g, "");   // 拼接链接
-                obj.description = $(this).find('.py-1 .col-9').text().trimStart().trimEnd();  // 获取获取描述
+                obj.description = $(this).find('p').text().trimStart().trimEnd();  // 获取获取描述
                 obj.language = $(this).find('>.f6 .repo-language-color').siblings().text().trimStart().trimEnd();  // 获取语言
                 obj.stars = $(this).find('>.f6 a').eq(0).text().trimStart().trimEnd();  // 获取start数
                 obj.forks = $(this).find('>.f6 a').eq(1).text().trimStart().trimEnd();  // 获取分支数
