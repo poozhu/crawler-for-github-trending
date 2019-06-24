@@ -38,21 +38,23 @@ app.get('/', (req, res) => {
         res.json(response); // 数据返回
     });
 })
-app.get('/:time', (req, res) => {
-    const {
-        time, // 获取排序时间
-    } = req.params;
-    let promise = getData(time); // 发起抓取
-    promise.then(response => {
-        res.json(response); // 数据返回
-    });
-})
+
 app.get('/:time-:language', (req, res) => {
     const {
         time, // 获取排序时间
         language // 获取对应语言
     } = req.params;
     let promise = getData(time, language); // 发起抓取
+    promise.then(response => {
+        res.json(response); // 数据返回
+    });
+})
+
+app.get('/:time', (req, res) => {
+    const {
+        time, // 获取排序时间
+    } = req.params;
+    let promise = getData(time); // 发起抓取
     promise.then(response => {
         res.json(response); // 数据返回
     });
