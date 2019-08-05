@@ -16,14 +16,20 @@ function getData(time, language) {
                 obj.links = 'https://github.com/' + obj.title.replace(/\s/g, "");   // 拼接链接
                 obj.description = $(this).find('p').text().trimStart().trimEnd();  // 获取获取描述
                 obj.language = $(this).find('>.f6 .repo-language-color').siblings().text().trimStart().trimEnd();  // 获取语言
-                obj.stars = $(this).find('>.f6 a').eq(0).text().trimStart().trimEnd();  // 获取start数
+                obj.stars = $(this).find('>.f6 a').eq(0).text().trimStart().trimEnd();  // 获取 start 数
                 obj.forks = $(this).find('>.f6 a').eq(1).text().trimStart().trimEnd();  // 获取分支数
-                obj.info = $(this).find('>.f6 .float-sm-right').text().trimStart().trimEnd();  // 获取对应时期star信息
+                obj.info = $(this).find('>.f6 .float-sm-right').text().trimStart().trimEnd();  // 获取对应时期 star 信息
                 list_array.push(obj);
 
                 // 检测各项数据是否正确
                 // console.log(obj);
             });
+
+            // 回归按新增 star 数量排名
+            list_array = list_array.sort ((x,y) => {
+                return parseInt(y.info.replace(/,/,''))-parseInt(x.info.replace(/,/,''))
+            })
+
             return Promise.resolve(list_array);
 
         })
