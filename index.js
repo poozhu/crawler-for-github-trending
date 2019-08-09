@@ -19,6 +19,7 @@ function getData(time, language) {
                 obj.stars = $(this).find('>.f6 a').eq(0).text().trimStart().trimEnd();  // 获取 start 数
                 obj.forks = $(this).find('>.f6 a').eq(1).text().trimStart().trimEnd();  // 获取分支数
                 obj.info = $(this).find('>.f6 .float-sm-right').text().trimStart().trimEnd();  // 获取对应时期 star 信息
+                obj.avatar = $(this).find('>.f6 img').eq(0).attr('src');  // 获取首位作者头像
                 list_array.push(obj);
 
                 // 检测各项数据是否正确
