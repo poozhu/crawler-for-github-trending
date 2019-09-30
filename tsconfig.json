@@ -1,0 +1,25 @@
+{
+  "include": [ "./src" ],
+  "compilerOptions": {
+    "outDir": "./lib",
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noStrictGenericChecks": true,
+    "downlevelIteration": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "inlineSourceMap": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "root*": ["src*"]
+    },
+    "typeRoots": [ "./node_modules/@types" ],
+    "target": "es2017",
+    "lib": ["es7", "es2017.object", "esnext.asynciterable"]
+  },
+  "exclude": []
+}
+

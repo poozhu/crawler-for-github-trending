@@ -12,14 +12,14 @@
 ```
 git clone https://github.com/ZY2071/Crawler-for-Github-Trending.git
 cd Crawler-for-Github-Trending
-npm i
-node index.js
+npm ci
+npm run start
 ```
 2.或者下载本项目压缩包，解压
 ```
 cd Crawler-for-Github-Trending-master  // 进入项目文件夹
-npm i
-node index.js
+npm ci
+npm run start
 ```
 
 # Examples  
@@ -32,7 +32,7 @@ Listening on port 3000!
 http://localhost:3000/time-language // time 表示周期，language 代表语言  例如：
 
 http://localhost:3000/daily  // 代表今日 可选参数：weekly,monthly
-http://localhost:3000/daily-JavaScript  // 代表今日的 JavaScript 分类 可选参数：任意语言
+http://localhost:3000/daily/JavaScript  // 代表今日的 JavaScript 分类 可选参数：任意语言
 ```
 
 稍微等待即可看到爬取完毕的返回数据：
