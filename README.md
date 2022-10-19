@@ -4,7 +4,7 @@
 
 # Usage  
 一篇简单的介绍 https://juejin.im/post/5cbab247e51d45789024d7cb   
-一个简单的应用 https://zy2071.com/project-center/#/githubTrending  
+一个简单的应用 https://poozhu.cn/project-center/#/githubTrending
 
 首先保证电脑已存在 node10.0+ 环境，然后  
 
