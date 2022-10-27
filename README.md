@@ -64,3 +64,8 @@ http://localhost:3000/list/daily/JavaScript  // 代表今日的 JavaScript 分�
 本项目每次访问都会实时爬取数据，所以数据返回速度会比较慢，期望作为接口数据建议定时爬取到数据库。
 
 但了解项目代码可以带来以上各个 node 模块和爬虫最基础的用法和概念，希望可以帮到大家。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=poozhu/Crawler-for-Github-Trending&type=Date)](https://star-history.com/#poozhu/Crawler-for-Github-Trending&Date)
+
