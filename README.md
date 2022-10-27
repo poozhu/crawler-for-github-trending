@@ -2,7 +2,7 @@
 50 lines, minimalist node crawler for [GitHub Trending](https://github.com/trending?since=daily).  
 一个50行的 node 爬虫，一个简单的 [axios](https://github.com/axios/axios), [express](https://github.com/expressjs/express), [cheerio](https://github.com/cheeriojs/cheerio) 体验项目。  
 
-# Usage  
+## Usage  
 一篇简单的介绍 https://juejin.im/post/5cbab247e51d45789024d7cb   
 一个简单的应用 https://poozhu.cn/project-center/#/githubTrending
 
@@ -22,7 +22,7 @@ npm i
 node index.js
 ```
 
-# Examples  
+## Examples  
 当启动项目后，可以看到控制台输出
 ```
 Listening on port 3000!
@@ -60,7 +60,7 @@ http://localhost:3000/list/daily/JavaScript  // 代表今日的 JavaScript 分�
 ]
 ```
 
-# More
+## More
 本项目每次访问都会实时爬取数据，所以数据返回速度会比较慢，期望作为接口数据建议定时爬取到数据库。
 
 但了解项目代码可以带来以上各个 node 模块和爬虫最基础的用法和概念，希望可以帮到大家。
