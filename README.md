@@ -3,20 +3,20 @@
 一个50行的 node 爬虫，一个简单的 [axios](https://github.com/axios/axios), [express](https://github.com/expressjs/express), [cheerio](https://github.com/cheeriojs/cheerio) 体验项目。  
 
 ## Usage  
-一篇简单的介绍 https://juejin.im/post/5cbab247e51d45789024d7cb   
+一篇简单的介绍 https://juejin.cn/post/6844903827024396296
 
 首先保证电脑已存在 node10.0+ 环境，然后  
 
 1.拉取本项目  
 ```
-git clone https://github.com/poozhu/Crawler-for-Github-Trending.git
-cd Crawler-for-Github-Trending
+git clone https://github.com/poozhu/crawler-for-github-trending.git
+cd crawler-for-github-trending
 npm i
 node index.js
 ```
 2.或者下载本项目压缩包，解压
 ```
-cd Crawler-for-Github-Trending-master  // 进入项目文件夹
+cd crawler-for-github-trending-master  // 进入项目文件夹
 npm i
 node index.js
 ```
@@ -66,5 +66,5 @@ http://localhost:3000/list/daily/JavaScript  // 代表今日的 JavaScript 分�
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=poozhu/Crawler-for-Github-Trending&type=Date)](https://star-history.com/#poozhu/Crawler-for-Github-Trending&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=poozhu/crawler-for-github-trending&type=Date)](https://star-history.com/#poozhu/crawler-for-github-trending&Date)
 
