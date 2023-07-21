@@ -1,4 +1,4 @@
-# Crawler-for-Github-Trending  
+# crawler-for-github-trending  
 50 lines, minimalist node crawler for [GitHub Trending](https://github.com/trending?since=daily).  
 一个50行的 node 爬虫，一个简单的 [axios](https://github.com/axios/axios), [express](https://github.com/expressjs/express), [cheerio](https://github.com/cheeriojs/cheerio) 体验项目。  
 
