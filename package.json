@@ -9,7 +9,7 @@
   "author": "poozhu",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.30.2",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.16.4"
   }
