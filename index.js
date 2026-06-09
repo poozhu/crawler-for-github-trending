@@ -36,7 +36,7 @@ async function getData(time, language) {
 
     // 回归按新增 star 数量排名
     items_array.sort((item1, item2) => {
-        return parseInt(item2.info.replace(/,/, "")) - parseInt(item1.info.replace(/,/, ""));
+        return parseInt(item2.info.replace(/,/g, "")) - parseInt(item1.info.replace(/,/g, ""));
     });
 
     return items_array;

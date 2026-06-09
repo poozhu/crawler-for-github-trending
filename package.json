@@ -1,5 +1,5 @@
 {
-  "name": "githubapi",
+  "name": "github-trending-api",
   "version": "1.0.0",
   "description": "API for Github Trending",
   "main": "index.js",
@@ -9,8 +9,8 @@
   "author": "poozhu",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.30.2",
-    "cheerio": "^1.0.0-rc.3",
+    "axios": "^0.32.0",
+    "cheerio": "^1.2.0",
     "express": "^4.16.4"
   }
 }
